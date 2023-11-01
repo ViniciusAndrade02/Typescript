@@ -9,16 +9,44 @@ class Quadrado{
   }
 
   Area(){
-    console.log(this.valor * this.valor)
+    console.log(`Área do quadrado: ${this.valor * this.valor}`)
     
   }
 
   Perimetro(){
-    console.log(this.valor*this.lado)
+    console.log(`Área do quadrado: ${this.valor * this.lado}`)
   }
 }
 
+function Rodar(){
+  const input: HTMLInputElement | null = document.querySelector('input');
 
-const sla = new Quadrado(5)
-console.log(sla.Area())
-console.log(sla.Perimetro())
+  if (input) {
+    const valor = parseInt(input.value);
+  
+    if (!isNaN(valor)) {
+      const sla = new Quadrado(valor);
+      console.log(sla.Area());
+      console.log(sla.Perimetro());
+    }
+  }
+  
+}
+
+
+
+
+type User = {
+  fistName:string,
+  LastName:string,
+  age:number
+}
+
+const usuario:User = {
+  fistName:'vinicius',
+  LastName:'andrade',
+  age:20
+
+}
+
+console.log(usuario.fistName)
