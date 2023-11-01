@@ -1,1 +1,0 @@
-const TypeNeame:string = 'Leite'
