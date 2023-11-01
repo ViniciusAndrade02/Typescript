@@ -12,6 +12,24 @@
     <input style="width: 200px;" class="input" type="number">
     <button style="width: 100px;" onclick="Rodar()">Click</button>
   </div>
+
+  <div style="display: flex; flex-direction: column; border: 2px solid red; padding: 10px; margin-top: 20px;">
+    <label  for="">Digite 6 numeros (0-60)</label>
+    <form style="display: grid;" action="">
+      <input placeholder="Digite " required style="width: 200px;" class="inputLoteria" >
+      <input placeholder="Digite" required style="width: 200px;" class="inputLoteria" >
+      <input placeholder="Digite" required style="width: 200px;" class="inputLoteria" >
+      <input placeholder="Digite" required style="width: 200px;" class="inputLoteria" >
+      <input placeholder="Digite" required style="width: 200px;" class="inputLoteria" >
+      <input placeholder="Digite" required style="width: 200px;" class="inputLoteria" >
+      
+    </form>
+    
+    <div>
+      <button class="btn-loteria" style="width: 100px;" onclick="Loteria()">Click</button>
+      <button class="btn-tentar" disabled onclick="tentar()">Novamente</button>
+    </div>
+  </div>
   
   <script src="./src/script.js"></script>
 </body>
